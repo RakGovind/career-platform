@@ -1,0 +1,60 @@
+/**
+ * KodNest Premium Build System — Design Tokens
+ * Calm, intentional, coherent. Maximum 4 colors. No gradients, no glass, no neon.
+ */
+
+:root {
+  /* ─── Color System (4 colors max) ─── */
+  --kn-background: #F7F6F3;
+  --kn-text: #111111;
+  --kn-accent: #8B0000;
+  --kn-success: #4A5D4A;
+  --kn-warning: #7A5F0A;
+
+  --kn-text-muted: rgba(17, 17, 17, 0.65);
+  --kn-border: rgba(17, 17, 17, 0.12);
+  --kn-border-focus: #8B0000;
+
+  /* ─── Typography ─── */
+  --kn-font-heading: "Georgia", "Times New Roman", serif;
+  --kn-font-body: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --kn-size-heading-xl: 2.25rem;   /* 36px */
+  --kn-size-heading-lg: 1.75rem;   /* 28px */
+  --kn-size-heading-md: 1.375rem;  /* 22px */
+  --kn-size-body: 1rem;            /* 16px */
+  --kn-size-body-lg: 1.125rem;     /* 18px */
+
+  --kn-line-height-tight: 1.3;
+  --kn-line-height-body: 1.65;
+  --kn-line-height-loose: 1.8;
+
+  --kn-weight-normal: 400;
+  --kn-weight-medium: 500;
+  --kn-weight-semibold: 600;
+
+  --kn-text-max-width: 720px;
+
+  /* ─── Spacing Scale (only these values) ─── */
+  --kn-space-1: 8px;
+  --kn-space-2: 16px;
+  --kn-space-3: 24px;
+  --kn-space-4: 40px;
+  --kn-space-5: 64px;
+
+  /* ─── Layout ─── */
+  --kn-workspace-ratio: 70%;
+  --kn-panel-ratio: 30%;
+  --kn-topbar-height: 56px;
+  --kn-footer-height: 80px;
+
+  /* ─── Components ─── */
+  --kn-radius: 6px;
+  --kn-input-height: 44px;
+  --kn-button-height: 44px;
+
+  /* ─── Motion ─── */
+  --kn-duration: 180ms;
+  --kn-ease: ease-in-out;
+  --kn-transition: var(--kn-duration) var(--kn-ease);
+}

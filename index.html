@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Notification Tracker — KodNest</title>
+  <link rel="stylesheet" href="styles/tracker-app.css" />
+</head>
+<body>
+  <div class="jt-app">
+    <nav class="jt-nav" aria-label="Main">
+      <a href="#/" class="jt-nav__brand">Job Notification Tracker</a>
+      <button type="button" class="jt-nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="jt-nav__toggle-icon"></span>
+      </button>
+      <ul class="jt-nav__links">
+        <li><a class="jt-nav__link" href="#/dashboard" data-route="dashboard">Dashboard</a></li>
+        <li><a class="jt-nav__link" href="#/saved" data-route="saved">Saved</a></li>
+        <li><a class="jt-nav__link" href="#/digest" data-route="digest">Digest</a></li>
+        <li><a class="jt-nav__link" href="#/settings" data-route="settings">Settings</a></li>
+        <li><a class="jt-nav__link" href="#/proof" data-route="proof">Proof</a></li>
+      </ul>
+    </nav>
+
+    <main class="jt-main" id="jt-outlet">
+      <div class="jt-page">
+        <h1 class="jt-page__heading">Home</h1>
+        <p class="jt-page__subtext">This section will be built in the next step.</p>
+      </div>
+    </main>
+
+    <div class="jt-modal-overlay" id="jt-modal" aria-hidden="true">
+      <div class="jt-modal" id="jt-modal-content"></div>
+    </div>
+  </div>
+
+  <script src="js/jobs-data.js"></script>
+  <script src="js/router.js"></script>
+</body>
+</html>
