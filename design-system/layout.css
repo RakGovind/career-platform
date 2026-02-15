@@ -1,0 +1,177 @@
+/**
+ * KodNest Premium Build System - Layout Components
+ * Top Bar → Context Header → Primary Workspace + Secondary Panel → Proof Footer
+ */
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-bottom: var(--border-width) solid var(--border-color);
+  background-color: var(--color-bg);
+}
+
+.top-bar__project-name {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h4);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.top-bar__progress {
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-primary);
+  opacity: 0.7;
+}
+
+.top-bar__status {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-body-small);
+  font-weight: 500;
+}
+
+.top-bar__status--not-started {
+  background-color: rgba(17, 17, 17, 0.05);
+  color: var(--color-text-primary);
+}
+
+.top-bar__status--in-progress {
+  background-color: rgba(184, 134, 11, 0.1);
+  color: var(--color-warning);
+}
+
+.top-bar__status--shipped {
+  background-color: rgba(74, 103, 65, 0.1);
+  color: var(--color-success);
+}
+
+/* Context Header */
+.context-header {
+  padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.context-header__headline {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h1);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  max-width: var(--max-width-text);
+}
+
+.context-header__subtext {
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+  opacity: 0.7;
+  max-width: var(--max-width-text);
+}
+
+/* Main Container - Workspace + Panel */
+.main-container {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: 0 var(--spacing-lg) var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Primary Workspace - 70% width */
+.primary-workspace {
+  flex: 0 0 70%;
+  min-width: 0;
+}
+
+/* Secondary Panel - 30% width */
+.secondary-panel {
+  flex: 0 0 30%;
+  min-width: 0;
+}
+
+/* Proof Footer - Persistent bottom section */
+.proof-footer {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--color-bg);
+  border-top: var(--border-width) solid var(--border-color);
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.proof-footer__container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.proof-footer__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h4);
+  margin-bottom: var(--spacing-sm);
+}
+
+.proof-checklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  list-style: none;
+  padding: 0;
+}
+
+.proof-checklist__item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.proof-checklist__checkbox {
+  width: 20px;
+  height: 20px;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.proof-checklist__checkbox:checked {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.proof-checklist__label {
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-primary);
+}
+
+.proof-checklist__input {
+  margin-left: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-body-small);
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  transition: border-color var(--transition-fast);
+}
+
+.proof-checklist__input:focus {
+  border-color: var(--border-color-focus);
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .primary-workspace,
+  .secondary-panel {
+    flex: 1 1 100%;
+  }
+}
