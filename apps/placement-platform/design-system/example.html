@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KodNest Premium Build System - Example</title>
+  <link rel="stylesheet" href="kodnest.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="top-bar__project-name">Project Alpha</div>
+    <div class="top-bar__progress">Step 2 / 5</div>
+    <div class="top-bar__status top-bar__status--in-progress">In Progress</div>
+  </header>
+
+  <!-- Context Header -->
+  <section class="context-header">
+    <h1 class="context-header__headline">Build Your Dashboard</h1>
+    <p class="context-header__subtext">Create a responsive dashboard with user analytics and key metrics.</p>
+  </section>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Primary Workspace (70%) -->
+    <main class="primary-workspace">
+      <div class="card">
+        <div class="card__header">
+          <h3 class="card__title">Dashboard Components</h3>
+        </div>
+        <div class="card__body">
+          <p>Select the components you want to include in your dashboard. Each component will be automatically styled according to the design system.</p>
+        </div>
+        <div class="card__footer">
+          <button class="btn btn--primary">Add Component</button>
+          <button class="btn btn--secondary" style="margin-left: var(--spacing-sm);">Preview</button>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: var(--spacing-md);">
+        <div class="card__header">
+          <h3 class="card__title">User Analytics</h3>
+          <span class="badge badge--success">Active</span>
+        </div>
+        <div class="card__body">
+          <p>Track user engagement and behavior patterns.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Secondary Panel (30%) -->
+    <aside class="secondary-panel">
+      <div class="step-explanation">
+        <h4 class="step-explanation__title">Step 2: Component Selection</h4>
+        <p class="step-explanation__text">Choose the dashboard components that match your requirements. You can add or remove components at any time.</p>
+      </div>
+
+      <div class="form-group" style="margin-top: var(--spacing-md);">
+        <label class="form-group__label" for="prompt-input">Copyable Prompt</label>
+        <div class="prompt-box">
+          <div class="prompt-box__content">Create a dashboard with user analytics, revenue metrics, and activity feed components.</div>
+          <button class="btn btn--small btn--secondary prompt-box__copy-btn">Copy</button>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button class="btn btn--primary">Build in Lovable</button>
+        <button class="btn btn--secondary">It Worked</button>
+        <button class="btn btn--secondary">Error</button>
+        <button class="btn btn--secondary">Add Screenshot</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Proof Footer -->
+  <footer class="proof-footer">
+    <div class="proof-footer__container">
+      <h4 class="proof-footer__title">Proof Checklist</h4>
+      <ul class="proof-checklist">
+        <li class="proof-checklist__item">
+          <input type="checkbox" class="proof-checklist__checkbox" id="proof-ui">
+          <label class="proof-checklist__label" for="proof-ui">UI Built</label>
+          <input type="text" class="proof-checklist__input" placeholder="Add proof">
+        </li>
+        <li class="proof-checklist__item">
+          <input type="checkbox" class="proof-checklist__checkbox" id="proof-logic">
+          <label class="proof-checklist__label" for="proof-logic">Logic Working</label>
+          <input type="text" class="proof-checklist__input" placeholder="Add proof">
+        </li>
+        <li class="proof-checklist__item">
+          <input type="checkbox" class="proof-checklist__checkbox" id="proof-test">
+          <label class="proof-checklist__label" for="proof-test">Test Passed</label>
+          <input type="text" class="proof-checklist__input" placeholder="Add proof">
+        </li>
+        <li class="proof-checklist__item">
+          <input type="checkbox" class="proof-checklist__checkbox" id="proof-deployed">
+          <label class="proof-checklist__label" for="proof-deployed">Deployed</label>
+          <input type="text" class="proof-checklist__input" placeholder="Add proof">
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
