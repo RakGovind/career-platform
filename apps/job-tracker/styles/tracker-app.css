@@ -1,0 +1,17 @@
+/**
+ * Job Notification Tracker — Entry point
+ * Tokens + app shell only (no build-system layout).
+ */
+
+@import "design-tokens.css";
+@import "components.css";
+@import "job-tracker.css";
+
+body {
+  margin: 0;
+  background: var(--kn-background);
+  color: var(--kn-text);
+  font-family: var(--kn-font-body);
+  font-size: var(--kn-size-body);
+  line-height: var(--kn-line-height-body);
+}
